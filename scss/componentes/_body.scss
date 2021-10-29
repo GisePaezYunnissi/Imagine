@@ -1,0 +1,34 @@
+@import '../base/variables';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body1 {
+    background-image:linear-gradient(to top,black 0%, #13a6ad 35%, #5dcae0 100%);
+    h1{
+        font-size: 38px;
+        padding: 10px;
+        display: inline;
+        h2{
+            font-size: 24px;
+            h3{
+                h4{
+                    font-family: $font;
+                }
+            }   
+        }     
+  }
+
+    h3{
+        h4{
+         font-size: 20px;            
+        }
+    }
+    p, li {
+        font-family: $font;
+        color: lightslategray; /* #31aeb4; */
+        font-size: 17px;
+    }
+}

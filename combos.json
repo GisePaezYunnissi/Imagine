@@ -1,0 +1,19 @@
+[
+    {   
+        "id": 1, 
+        "nombre": "Combo Single", 
+        "price": 1000
+    },
+    {
+        "id": 2, 
+        "nombre": "Combo Medium", 
+        "price": 1200
+    },
+
+    {
+        "id": 3, 
+        "nombre": "Combo Single", 
+        "price": 2000
+    }
+]
+

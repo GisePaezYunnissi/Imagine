@@ -1,0 +1,276 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#body1 {
+  background-image: linear-gradient(to top, black 0%, #13a6ad 35%, #5dcae0 100%);
+}
+#body1 h1 {
+  font-size: 38px;
+  padding: 10px;
+  display: inline;
+}
+#body1 h1 h2 {
+  font-size: 24px;
+}
+#body1 h1 h2 h3 h4 {
+  font-family: "Lato", sans-serif;
+}
+#body1 h3 h4 {
+  font-size: 20px;
+}
+#body1 p, #body1 li {
+  font-family: "Lato", sans-serif;
+  color: lightslategray;
+  /* #31aeb4; */
+  font-size: 17px;
+}
+
+/* @media only screen and (max-width: 768px){ */
+#header1 {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-image: linear-gradient(to top, white 0%, #b5ecec 1%, #13a6ad 100%);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+#header1 nav img {
+  width: 25px;
+}
+#header1 nav ul {
+  list-style: none;
+  display: inline;
+}
+#header1 nav ul li {
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+#header1 nav ul li a {
+  text-decoration: none;
+  color: #168cbb;
+}
+#header1 nav ul li a:hover {
+  text-decoration: none;
+  color: #78e7a6;
+}
+
+.footer {
+  padding: 10px;
+  background-image: linear-gradient(to top, white 0%, #b5ecec 1%, #13a6ad 100%);
+  color: #378FB3;
+  font-family: "Lato", sans-serif;
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.redes1 {
+  width: 25px;
+}
+
+.redes2 {
+  width: 25px;
+}
+
+.redes3 {
+  width: 25px;
+}
+
+/* @media only screen and (max-width: 1200px){ */
+section {
+  margin: 0 auto;
+}
+section .poster {
+  width: 290px;
+  height: 435px;
+}
+
+/*-----------------section destacadas------------------*/
+.menu-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.menu-container div {
+  display: inline-block;
+  text-align: justify;
+  /* width: 450px; */
+}
+
+#izquierda {
+  text-align: left;
+}
+
+#derecha {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+/*------------------------------section favoritas--------------------*/
+#favoritos {
+  text-align: center;
+  padding: 40px;
+}
+
+.favoritas-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.favorita {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*---------------------------------section peliculas-----------------------*/
+#peliculas {
+  text-align: center;
+  padding: 20px;
+}
+
+.peliculas-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  /* display: inline-block; */
+  text-align: center;
+  padding: 20px;
+}
+
+.col {
+  width: 290px;
+  display: inline-block;
+}
+
+.favorita {
+  transition: all 1s;
+}
+
+.favorita:hover {
+  transform: scale(1.2);
+}
+
+/* //Animaciones
+.animacion {
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+/*-------Style page comprar------------*/
+#comprar-main {
+  background: url(/image/animated-shape.svg);
+}
+#comprar-main h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  color: #168cbb;
+}
+#comprar-main h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+#comprar-main a {
+  text-decoration: none;
+  color: #168cbb;
+}
+#comprar-main a:hover {
+  text-decoration: none;
+  color: #78e7a6;
+}
+
+.container {
+  font-family: "Lato", sans-serif;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 2, 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+#combos {
+  display: flex;
+}
+
+.card-carrito {
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background-color: white;
+  width: 310px;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrito_container {
+  position: relative;
+}
+
+/*------------Estilo del botón agregar---------*/
+.btn-agregarAlCarrito {
+  background-color: #0dcaf0;
+  color: #E6EAEF;
+  border-color: #4892c4;
+  border-bottom-color: #4892c4;
+  padding: 5px;
+  box-shadow: 0 1px 1px -1px rgba(255, 255, 255, 0.9) inset, 0 40px 20px -20px rgba(255, 255, 255, 0.15) inset, 0 -1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 -40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 9px 8px -4px rgba(0, 0, 0, 0.4), 0 2px 1px -1px rgba(0, 0, 0, 0.3), 7px 7px 8px -4px rgba(0, 0, 0, 0.1), -7px 7px 8px -4px rgba(0, 0, 0, 0.1), 0 -4px 12px 2px rgba(31, 84, 245, 0.2);
+}
+
+.btn-agregarAlCarrito:hover {
+  background-color: #78e7a6;
+}
+
+.btn-agregarAlCarrito:active {
+  box-shadow: 0 -1px 1px -1px rgba(255, 255, 255, 0.4) inset, 0 -40px 20px -20px rgba(255, 255, 255, 0.1) inset, 0 1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 7px 8px -4px rgba(0, 0, 0, 0.4), 0 2px 1px -1px rgba(0, 0, 0, 0.2), 7px 7px 8px -4px rgba(0, 0, 0, 0.05), -7px 7px 8px -4px rgba(0, 0, 0, 0.05), 0 -4px 12px 2px rgba(31, 84, 245, 0.1);
+  background-color: #78e7a6;
+  color: #b9c4e6;
+}
+
+/*-------------Estilo botón vaciar----------*/
+#btnJQuery {
+  background-color: #0dcaf0;
+  color: #E6EAEF;
+  border-color: #4892c4;
+  border-bottom-color: #4892c4;
+  padding: 5px;
+  box-shadow: 0 1px 1px -1px rgba(255, 255, 255, 0.9) inset, 0 40px 20px -20px rgba(255, 255, 255, 0.15) inset, 0 -1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 -40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 9px 8px -4px rgba(0, 0, 0, 0.4), 0 2px 1px -1px rgba(0, 0, 0, 0.3), 7px 7px 8px -4px rgba(0, 0, 0, 0.1), -7px 7px 8px -4px rgba(0, 0, 0, 0.1), 0 -4px 12px 2px rgba(31, 84, 245, 0.2);
+}
+
+#btnJQuery:hover {
+  background-color: #78e7a6;
+}
+
+#btnJQuery:active {
+  box-shadow: 0 -1px 1px -1px rgba(255, 255, 255, 0.4) inset, 0 -40px 20px -20px rgba(255, 255, 255, 0.1) inset, 0 1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 7px 8px -4px rgba(0, 0, 0, 0.4), 0 2px 1px -1px rgba(0, 0, 0, 0.2), 7px 7px 8px -4px rgba(0, 0, 0, 0.05), -7px 7px 8px -4px rgba(0, 0, 0, 0.05), 0 -4px 12px 2px rgba(31, 84, 245, 0.1);
+  background-color: #78e7a6;
+  color: #b9c4e6;
+}
+
+/*# sourceMappingURL=style.css.map */

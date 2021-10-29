@@ -1,0 +1,25 @@
+@import '../base/variables';
+.footer{
+    padding: 10px;
+    background-image:linear-gradient(to top, white 0%, #b5ecec 1%, #13a6ad 100%);
+    color: #378FB3;
+    font-family: $font;
+}
+.foot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+//Le doy alineación a la parte de redes sociales
+
+.redes1 {
+    width: 25px;
+}
+.redes2 {
+    width: 25px;
+}
+.redes3 {
+    width: 25px;
+}

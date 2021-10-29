@@ -1,0 +1,98 @@
+/* @media only screen and (max-width: 1200px){ */
+section {
+    margin: 0 auto;
+    .poster {
+        width: 290px;
+        height: 435px;
+    }
+}
+/*-----------------section destacadas------------------*/
+.menu-container {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.menu-container div {
+    display: inline-block;
+    text-align: justify;
+    /* width: 450px; */
+}
+
+#izquierda {
+    text-align: left;   
+}
+
+#derecha {
+    display:inline-flex;
+    justify-content: flex-end;
+}
+
+/*------------------------------section favoritas--------------------*/
+#favoritos {
+    text-align: center;
+    padding: 40px;
+}
+
+.favoritas-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.favorita{
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+/*---------------------------------section peliculas-----------------------*/
+#peliculas {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.peliculas-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+.row {
+    /* display: inline-block; */
+    text-align: center;
+    padding: 20px;
+}
+
+.col{
+    width: 290px;
+    display: inline-block;
+}
+
+//Transformaciones-transiciones
+.favorita{
+    transition: all 1s;
+}
+
+.favorita:hover {
+    transform: scale(1.2);
+}
+
+/* //Animaciones
+.animacion {
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
