@@ -2,8 +2,6 @@
 @import '../base/variables';
 
 #header1{
-    margin-bottom: 15px;
-    padding: 10px;
     background-image:linear-gradient(to top, white 0%, #b5ecec 1%, #13a6ad 100%);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
     nav{
@@ -23,7 +21,7 @@
                     color: #168cbb;
                     }
                     a:hover{
-                        text-decoration: none;
+                        text-decoration: $decoration;
                         color: #78e7a6 ;
                       }
                 }

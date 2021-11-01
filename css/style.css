@@ -31,8 +31,6 @@
 
 /* @media only screen and (max-width: 768px){ */
 #header1 {
-  margin-bottom: 15px;
-  padding: 10px;
   background-image: linear-gradient(to top, white 0%, #b5ecec 1%, #13a6ad 100%);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
@@ -165,19 +163,6 @@ section .poster {
   transform: scale(1.2);
 }
 
-/* //Animaciones
-.animacion {
-    animation-duration: 4s;
-    animation-name: aparecer;
-}
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-} */
 /*-------Style page comprar------------*/
 #comprar-main {
   background: url(/image/animated-shape.svg);

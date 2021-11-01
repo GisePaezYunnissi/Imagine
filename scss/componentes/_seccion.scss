@@ -19,9 +19,8 @@ section {
 } 
 
 #izquierda {
-    text-align: left;   
+    text-align: left;
 }
-
 /*------------------------------section favoritas--------------------*/
 #favoritos {
     text-align: center;
@@ -78,17 +77,3 @@ section {
 .favorita:hover {
     transform: scale(1.2);
 }
-
-/* //Animaciones
-.animacion {
-    animation-duration: 4s;
-    animation-name: aparecer;
-}
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-} */
