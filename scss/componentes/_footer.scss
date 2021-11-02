@@ -1,9 +1,16 @@
 @import '../base/variables';
 .footer{
     padding: 10px;
-    background-image:linear-gradient(to top, white 0%, #b5ecec 1%, #13a6ad 100%);
+    background-image:linear-gradient(to top, white 0%, #b5ecec 10%);
     color: #378FB3;
     font-family: $font;
+    a{
+        text-decoration:$decoration;
+        color: #168cbb;
+        &:hover{
+          color: #0D2C36 ;
+          }
+        }
 }
 .foot{
     display: flex;

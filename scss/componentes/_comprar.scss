@@ -2,6 +2,7 @@
 /*-------Style page comprar------------*/
 #comprar-main{
     background:url(/image/animated-shape.svg);
+    overflow: hidden;
     h1{
       font-family: $font;
       font-size: 25px;
@@ -12,15 +13,13 @@
       font-size: 20px;
     }
     a{
-    text-decoration: none;
+    text-decoration:$decoration;
     color: #168cbb;
-    }
-    a:hover{
-    text-decoration: none;
-    color: #78e7a6 ;
+    &:hover{
+      color: #0D2C36 ;
+      }
     }
 }
-
 .container {
     font-family: $font;
     padding: 15px;
@@ -33,6 +32,12 @@
 
 #combos{
   display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 576px){
+    #favoritos {
+        padding:0px;
+    }
+}
 }
 .card-carrito{
   box-shadow: 2px 2px 20px 0 rgba(0,0,0,0.3);
@@ -48,11 +53,8 @@
 
 .carrito_container{
   position: relative;
-  ;
 }
 
-
-  
 /*------------Estilo del botón agregar---------*/
 .btn-agregarAlCarrito {
       background-color: #0dcaf0;

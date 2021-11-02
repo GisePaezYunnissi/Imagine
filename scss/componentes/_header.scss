@@ -19,11 +19,11 @@
                 a{
                     text-decoration: $decoration;
                     color: #168cbb;
+                    &:hover{
+                        color: #0D2C36 ;
+                        }
                     }
-                    a:hover{
-                        text-decoration: $decoration;
-                        color: #78e7a6 ;
-                      }
+                    
                 }
             }
         }
