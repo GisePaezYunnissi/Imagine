@@ -5,26 +5,31 @@ section {
     }
 }
 /*-----------------section destacada------------------*/
+#home {
+    text-align: center;
+    padding: 40px;
+}
+
 .menu-container {
     margin: 0 auto;
     text-align: center;
     width: 100%;
     padding: 20px;
-    position: relative;
+    position: relative;   
 }
-@media (min-width: 576px) {
-    .menu-container {
-      max-width: 640px;
-    }
-} 
 
-#izquierda {
+.izquierda {
     text-align: left;
 }
-#derecha{
-    text-align: right;
+.imagen-destacada{
+    display: inline-flex;
+    justify-content: flex-end;
 }
-
+@media (max-width: 576px){
+    #home {
+        padding:10px;
+    }
+}
 /*------------------------------section favoritas--------------------*/
 #favoritos {
     text-align: center;
