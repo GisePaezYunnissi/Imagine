@@ -60,22 +60,27 @@ class Ecommerce {
     }
 
     agregarAlCarrito(id) {
+        /* let existente=this.carrito.findIndex(element =>element.id==id)
+        if (existente==-1) { */
         const comboAgregar = this.combos.find(combo => {
         return combo.id == id;
     });
-        this.carrito.push(comboAgregar);
-        
-        //Total de mi carrito
-        let total = 0;
-        this.carrito.forEach(combo => {
-        total += combo.price
-    });
-
-    
+    this.carrito.push(comboAgregar);
+    /* swal("Perfecto", "Agregaste un combo al carrito", "success");
+    }
+    else{
+    swal("Lo siento", "No se puede seleccionar el mismo combo más de una vez", "error");
+    }  */
+    //Total de mi carrito
+    let total = 0;
+    this.carrito.forEach(combo => {
+    total += combo.price
     //Muestro el total en pesos de los combos en el carrito
     document.getElementById("total").innerHTML = "$"+total;
     // Muestro la cantidad de combos agregados al carrito
     document.getElementById("cantidad").innerHTML = `Cantidad: ${this.carrito.length}`
+    });
+    
 
     // localStorage
     localStorage.total = JSON.stringify(total);

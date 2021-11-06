@@ -79,14 +79,17 @@
 }
 
 .redes1 {
+  margin: 5px;
   width: 25px;
 }
 
 .redes2 {
+  margin: 5px;
   width: 25px;
 }
 
 .redes3 {
+  margin: 5px;
   width: 25px;
 }
 
@@ -101,6 +104,7 @@ section .poster {
 #home {
   text-align: center;
   padding: 40px;
+  max-width: 950px;
 }
 
 .menu-container {
@@ -112,7 +116,7 @@ section .poster {
 }
 
 .izquierda {
-  text-align: left;
+  text-align: justify;
 }
 
 .imagen-destacada {
