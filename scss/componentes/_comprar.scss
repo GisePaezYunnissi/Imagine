@@ -2,6 +2,7 @@
 /*-------Style page comprar------------*/
 #comprar-main{
     background:url(/image/sprinkle.svg);
+    overflow: hidden;
     h1{
       font-family: $font;
       font-size: 25px;
@@ -58,7 +59,7 @@
 /*------------Estilo del botón agregar---------*/
 .btn-agregarAlCarrito {
       background-color: #0dcaf0;
-      color: #E6EAEF;
+      color: #0d0d0e;
       border-color: #4892c4;
       border-bottom-color: #4892c4;
       padding: 5px;
@@ -75,7 +76,7 @@
 /*-------------Estilo botón vaciar----------*/
 #btnJQuery{
       background-color: #0dcaf0;
-      color: #E6EAEF;
+      color: #0a0a0a;
       border-color: #4892c4;
       border-bottom-color: #4892c4;
       padding: 5px;

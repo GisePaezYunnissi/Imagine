@@ -188,6 +188,7 @@ section .poster {
 /*-------Style page comprar------------*/
 #comprar-main {
   background: url(/image/sprinkle.svg);
+  overflow: hidden;
 }
 #comprar-main h1 {
   font-family: "Lato", sans-serif;
@@ -246,7 +247,7 @@ section .poster {
 /*------------Estilo del botón agregar---------*/
 .btn-agregarAlCarrito {
   background-color: #0dcaf0;
-  color: #E6EAEF;
+  color: #0d0d0e;
   border-color: #4892c4;
   border-bottom-color: #4892c4;
   padding: 5px;
@@ -266,7 +267,7 @@ section .poster {
 /*-------------Estilo botón vaciar----------*/
 #btnJQuery {
   background-color: #0dcaf0;
-  color: #E6EAEF;
+  color: #0a0a0a;
   border-color: #4892c4;
   border-bottom-color: #4892c4;
   padding: 5px;
