@@ -187,8 +187,7 @@ section .poster {
 
 /*-------Style page comprar------------*/
 #comprar-main {
-  background: url(/image/animated-shape.svg);
-  overflow: hidden;
+  background: url(/image/sprinkle.svg);
 }
 #comprar-main h1 {
   font-family: "Lato", sans-serif;
@@ -241,6 +240,7 @@ section .poster {
 
 .carrito_container {
   position: relative;
+  text-align: center;
 }
 
 /*------------Estilo del botón agregar---------*/

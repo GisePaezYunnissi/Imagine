@@ -1,8 +1,7 @@
 @import '../base/variables';
 /*-------Style page comprar------------*/
 #comprar-main{
-    background:url(/image/animated-shape.svg);
-    overflow: hidden;
+    background:url(/image/sprinkle.svg);
     h1{
       font-family: $font;
       font-size: 25px;
@@ -53,6 +52,7 @@
 
 .carrito_container{
   position: relative;
+  text-align: center;
 }
 
 /*------------Estilo del botón agregar---------*/
