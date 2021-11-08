@@ -2,18 +2,24 @@
     {   
         "id": 1, 
         "nombre": "Combo Single", 
-        "price": 1000
+        "price": 1000,
+        "src":"image/Popcorns-rafiki.svg",
+        "alt": "una persona mirando y comiendo pochoclos"
     },
     {
         "id": 2, 
         "nombre": "Combo Medium", 
-        "price": 1200
+        "price": 1200,
+        "src":"image/filmrollsazul.gif",
+        "alt": "rollos de películas"
     },
 
     {
         "id": 3, 
         "nombre": "Combo Binge-Watching", 
-        "price": 2000
+        "price": 2000,
+        "src":"image/movienight.gif",
+        "alt": "personas mirando películas"
     }
 ]
 

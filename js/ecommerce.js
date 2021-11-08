@@ -4,7 +4,6 @@ class Ecommerce {
     constructor() {
     this.combos = [];
     this.carrito = [];
-    this.mostarCarrito = [];
     }
     // Cargo los combos disponibles
     armarCombos(){
@@ -13,21 +12,21 @@ class Ecommerce {
         this.combos= response;
         localStorage.ajax = JSON.stringify(response); 
         });
-        }
-        cargarCombos(){
+    }
+    cargarCombos(){
         this.combos = JSON.parse(localStorage.ajax);
-        }
+    }
         
     //Se muestra en html las tarjetas de los distintos combos con el nombre y precio
     mostrarCards(){
         this.armarCombos();
         let acumular =``;
         this.combos.forEach(combo => {
-            acumular += 
-            ` <article class="card-carrito">
+            acumular += ` 
+            <article class="card-carrito">
             <div class="peliculas_container">
             <div>
-            <img style="width:290px" src="image/Film rollsazul.gif" alt="Animación de rollos de películas">
+            <img style="width:290px" src='${combo.src}' alt='${combo.alt}'>
             </div>
             </div>
             <div class="carrito_container">
@@ -43,10 +42,11 @@ class Ecommerce {
 
         this.cargarBotones()
     }
-    //Al nodo lo convertimos en array
+    //Se identifica que boton hace clik para poder cargar en el carrito
     cargarBotones() {
         const arrayDeBotones = Array.from(document.getElementsByClassName('btn-agregarAlCarrito'));
-        arrayDeBotones.forEach(boton => { boton.onclick = (event) => {
+        arrayDeBotones.forEach(boton => { 
+        boton.onclick = (event) => {
         const responsableID = event.target.getAttribute("data-idcombo");
         /* console.log(responsableID); */
         this.agregarAlCarrito(responsableID)
@@ -54,23 +54,23 @@ class Ecommerce {
         })
         
         $('#vaciar').html('<button id="btnJQuery">Vaciar carrito</button>')
-        $("#btnJQuery").on('click', () => {
-        this.vaciarCarrito()
-        });
+        $("#btnJQuery").on('click', () => {this.vaciarCarrito()});
+        $('#comprar').html('<button id="btnJQuery2">Comprar</button>')
+        $("#btnJQuery2").on('click',()=>(this.realizarCompra()))
     }
 
     agregarAlCarrito(id) {
-        /* let existente=this.carrito.findIndex(element =>element.id==id)
-        if (existente==-1) { */
+        let existente=this.carrito.findIndex(element =>element.id==id)
+        if (existente==-1) {
         const comboAgregar = this.combos.find(combo => {
         return combo.id == id;
     });
     this.carrito.push(comboAgregar);
-    /* swal("Perfecto", "Agregaste un combo al carrito", "success");
+    swal("Perfecto", "Agregaste un combo al carrito", "success");
     }
     else{
     swal("Lo siento", "No se puede seleccionar el mismo combo más de una vez", "error");
-    }  */
+    } 
     //Total de mi carrito
     let total = 0;
     this.carrito.forEach(combo => {
@@ -81,8 +81,7 @@ class Ecommerce {
     document.getElementById("cantidad").innerHTML = `Cantidad: ${this.carrito.length}`
     });
     
-
-    // localStorage
+    //localStorage
     localStorage.total = JSON.stringify(total);
     localStorage.cantidad = JSON.stringify(this.carrito.length); 
     localStorage.combo = JSON.stringify(this.carrito);
@@ -95,10 +94,26 @@ class Ecommerce {
     this.total=0
     this.cantidad=0
     this.carrito = []
-    this.mostarCarrito = [];
+    this.mostrarCarrito = [];
     document.getElementById("total").innerHTML = "$0";
     document.getElementById("cantidad").innerHTML = `Cantidad: 0`
 }
-}
- 
 
+realizarCompra(){
+    swal({
+        title: "Compra realizada con exito",
+        text: "Dentro de los 10 días lo vas a estar recibiendo ¡Muchas gracias!",
+        icon: "success",
+      });
+    localStorage.total =0;
+    localStorage.cantidad=0;
+    localStorage.combo=[];
+    this.total=0;
+    this.cantidad=0;
+    this.carrito=[];
+    this.mostrarCarrito=[];
+    document.getElementById("total").innerHTML = "$0";
+    document.getElementById("cantidad").innerHTML = `Cantidad: 0`
+  }
+
+}
