@@ -53,7 +53,7 @@ class Ecommerce {
                 }
             });
         
-        $('#vaciar').html('<button id="btnJQuery">Limpiar</button>')
+        $('#vaciar').html('<button id="btnJQuery">Limpiar</button>');
         $("#btnJQuery").on('click', () => {this.vaciarCarrito()});
         $('#comprar').html('<button id="btnJQuery2">Comprar</button>');
         $("#btnJQuery2").on('click',()=>(this.realizarCompra()));
@@ -91,13 +91,13 @@ class Ecommerce {
 
     //Borrar carrito en localstorage y html
     vaciarCarrito(){
-        localStorage.total =0;
+        localStorage.total=0;
         localStorage.cantidad=0;
         localStorage.combo=[];
         this.total=0;
         this.cantidad=0;
-        this.carrito = [];
-        this.mostrarCarrito = [];
+        this.carrito=[];
+        this.mostrarCarrito=[];
         document.getElementById("total").innerHTML = "$0";
         document.getElementById("cantidad").innerHTML = "Cantidad: 0";
     };
@@ -109,7 +109,7 @@ class Ecommerce {
             icon: "success",
         });
 
-        localStorage.total =0;
+        localStorage.total=0;
         localStorage.cantidad=0;
         localStorage.combo=[];
         this.total=0;
